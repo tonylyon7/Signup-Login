@@ -1,5 +1,5 @@
 const config = {
-    liveUrl: "https://tonylyon7.onrender.com/api"
+    liveUrl: "https://tonybackend.herokuapp.com/api/"
 }
 
 export {config}
