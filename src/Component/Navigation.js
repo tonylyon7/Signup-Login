@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { user_logout } from '../Redux/Actions/UserActions'
+import {AiOutlineMenu} from 'react-icons/ai'
 import "../Styles/style.css"
 
 const Navigation = () => {
@@ -32,7 +33,7 @@ const Navigation = () => {
                 data-bs-toggle='collapse' data-bs-target='#navbarResponsive'
                 aria-controls='navbarResponsive' aria-expanded='false'
                 aria-label='Toggle navigation'>
-                    <i></i>
+                    <AiOutlineMenu className='menuicon'/>
                 </button>
                 {userDetail ? 
                         <div className='collapse navbar-collapse' id='navbarResponsive'>
